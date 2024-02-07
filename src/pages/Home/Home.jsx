@@ -1,4 +1,4 @@
-import { Footer, Navbar, Hero } from "../../containers";
+import { Footer, Navbar, Hero, About } from "../../containers";
 import "./Home.scss";
 
 const Home = () => {
@@ -11,6 +11,10 @@ const Home = () => {
 
         <section className="home__hero">
           <Hero />
+        </section>
+
+        <section className="home__about">
+          <About />
         </section>
 
         <section className="footer">
