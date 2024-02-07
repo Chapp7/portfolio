@@ -1,0 +1,43 @@
+@import '../../styles/colors/colors.scss';
+@import '../../styles/fonts/fonts.scss';
+
+.landing-page {
+  background-color: $dashboard-background-color;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+
+  .header-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .buttons {
+      button {
+        background-color: $dashboard-buttons-color;
+        color: $timeline-background-color;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &.contact-me {
+          &:hover {
+            background-color: darken($dashboard-buttons-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}

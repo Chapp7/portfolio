@@ -1,31 +1,21 @@
-import { Footer, Navbar } from "../../containers";
+import { Footer, Navbar, Hero } from "../../containers";
 import "./Home.scss";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="home__content">
-        <div className="navbar">
+        <section className="navbar">
           <Navbar />
-        </div>
+        </section>
 
-        <div className="landing-page">
-          <div className="header-content">
-            <h1>Experienced Web Developer</h1>
-            <h2>Creating Innovative Solutions</h2>
-            <small>
-              Welcome to my website portfolio. I specialize in creating visually
-              stunning and user-friendly websites that drive results.
-            </small>
-            <div className="buttons">
-              <button className="contact-me">Contact Me</button>
-            </div>
-          </div>
-        </div>
+        <section className="home__hero">
+          <Hero />
+        </section>
 
-        <div className="footer">
+        <section className="footer">
           <Footer />
-        </div>
+        </section>
       </div>
     </div>
   );

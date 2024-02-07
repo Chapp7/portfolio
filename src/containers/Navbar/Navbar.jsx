@@ -1,9 +1,19 @@
 import "./Navbar.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Navbar = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
   return (
     <nav className="navbar" role="navigation">
-      <div className="navbar__content">
+      <div className="navbar__content" data-aos='fade-down'>
         <div className="logo">
           <a href="#logo" aria-label="Go to Logo">
             Logo
