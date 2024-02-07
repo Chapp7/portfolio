@@ -1,0 +1,108 @@
+.career-timeline-wrapper {
+  min-height: 100vh;
+  .career-timeline__header {
+    text-align: center;
+    padding: 20px 0;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .career-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 60px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 60px;
+      height: calc(100% - 60px);
+      width: 2px;
+      background: #d3d3d3;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 100%;
+      display: flex;
+      padding: 20px 0;
+
+      &:nth-child(odd) {
+        justify-content: flex-end;
+        .timeline-content {
+          order: 2;
+        }
+        .timeline-date {
+          order: 1;
+          margin-right: auto;
+          transform: translateX(-100%) translateY(-50%);
+        }
+      }
+
+      &:nth-child(even) {
+        justify-content: flex-start;
+        .timeline-content {
+          order: 1;
+        }
+        .timeline-date {
+          order: 2;
+          transform: translateX(0) translateY(-50%);
+        }
+      }
+
+      .timeline-date {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #3f3f3f;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 4px;
+        z-index: 2;
+      }
+
+      .timeline-content {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        padding: 20px;
+        z-index: 0;
+        max-width: 45%;
+        min-width: 250px;
+        h3 {
+          color: #333;
+        }
+        p {
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .career-timeline:before {
+    left: 10px;
+    top: 60px;
+    height: calc(100% - 60px);
+  }
+
+  .career-timeline .timeline-item {
+    flex-direction: column;
+    align-items: center;
+
+    .timeline-date {
+      left: 10px;
+      top: 10px;
+      transform: translateX(0) translateY(0);
+    }
+
+    .timeline-content {
+      max-width: 90%;
+      margin-top: 20px;
+    }
+  }
+}
