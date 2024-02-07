@@ -32,10 +32,6 @@ const Home = () => {
           <Projects />
         </section>
 
-        <section className="career-timeline">
-          <CareerTimeline />
-        </section>
-
         <section className="footer">
           <Footer />
         </section>
