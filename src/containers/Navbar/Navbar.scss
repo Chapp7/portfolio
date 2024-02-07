@@ -19,7 +19,6 @@
       padding: 0.5rem 1rem;
       border: 2px solid transparent;
       border-radius: 10px;
-      transition: background-color var(--transition-speed), color var(--transition-speed);
 
       &:hover {
         background-color: lightblue;
