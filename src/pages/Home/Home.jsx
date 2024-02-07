@@ -5,6 +5,7 @@ import {
   About,
   CareerTimeline,
   Projects,
+  Skills,
 } from "../../containers";
 import "./Home.scss";
 
@@ -26,6 +27,10 @@ const Home = () => {
 
         <section className="career-timeline">
           <CareerTimeline />
+        </section>
+
+        <section className="skills">
+          <Skills />
         </section>
 
         <section className="projects">

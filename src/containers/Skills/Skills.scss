@@ -1,0 +1,18 @@
+@import '../../styles/mixins/mixins.scss';
+
+.skills-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  
+  .skills {
+    &__heading {
+      @include heading-style;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}

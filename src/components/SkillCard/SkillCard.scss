@@ -1,0 +1,48 @@
+@import '../../styles/mixins/mixins.scss';
+@import '../../styles/fonts/fonts.scss';
+
+.skill-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      margin-bottom: 20px;
+      text-align: center;
+      
+      .icons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: $font-weight-light;
+        margin-bottom: 10px;
+      }
+    }
+
+    .tags {
+      margin-top: 15px;
+      span {
+        display: inline-block;
+        background-color: #eaeaea;
+        color: #333;
+        padding: 5px 15px;
+        font-size: 0.8rem;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
