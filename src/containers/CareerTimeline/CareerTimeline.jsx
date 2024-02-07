@@ -12,33 +12,40 @@ const CareerTimeline = () => {
     {
       year: "2017",
       title: "Junior Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
     },
     {
       year: "2017",
       title: "Junior Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
     },
     {
       year: "2017",
       title: "Junior Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
     },
     {
       year: "2017",
       title: "Junior Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque."
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.",
     },
-    
   ];
 
   return (
     <div className="career-timeline-wrapper">
-      <div className="career-timeline__header" data-aos="fade-down">
+      <div className="career-timeline__header" data-aos="fade-right">
         <h2>My Career Timeline</h2>
       </div>
       <div className="career-timeline">
-        <div className="timeline-line" data-aos="grow-up" data-aos-delay="300"></div>
+        <div
+          className="timeline-line"
+          data-aos="grow-up"
+          data-aos-delay="300"
+        ></div>
         {timelineEvents.map((event, index) => (
           <div
             className="timeline-item"

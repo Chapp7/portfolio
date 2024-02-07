@@ -1,4 +1,11 @@
-import { Footer, Navbar, Hero, About, CareerTimeline } from "../../containers";
+import {
+  Footer,
+  Navbar,
+  Hero,
+  About,
+  CareerTimeline,
+  Projects,
+} from "../../containers";
 import "./Home.scss";
 
 const Home = () => {
@@ -21,10 +28,17 @@ const Home = () => {
           <CareerTimeline />
         </section>
 
+        <section className="projects">
+          <Projects />
+        </section>
+
+        <section className="career-timeline">
+          <CareerTimeline />
+        </section>
+
         <section className="footer">
           <Footer />
         </section>
-        
       </div>
     </div>
   );

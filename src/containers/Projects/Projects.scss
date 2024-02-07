@@ -1,0 +1,33 @@
+@import "../../styles/mixins/mixins.scss";
+
+.projects-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  
+   .projects {
+    &__heading {
+      @include heading-style;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__buttons {
+      margin-top: 40px;
+      text-align: center;
+      button {
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: background-color 0.3s ease-in-out;
+      }
+    }
+  }
+}
