@@ -6,9 +6,7 @@ import { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
+    AOS.init({});
   }, []);
 
   return (
@@ -17,6 +15,7 @@ const About = () => {
         <img src={profile} alt="about" />
       </div>
       <div className="about-section__content" data-aos="fade-left">
+        <h1>About Me</h1>
         <h2>Web Design That Makes an Impact</h2>
         <p>
           I have a strong background in web design and a passion for creating
